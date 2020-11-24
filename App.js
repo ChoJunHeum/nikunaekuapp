@@ -12,6 +12,7 @@ import SignIn from './src/common/signin';
 import SignUp from './src/common/signup';
 
 import { AuthContext } from './src/utils/context';
+import BrandDetail from './src/customer/brandDetail';
 
 const Stack = createStackNavigator();
 
@@ -112,6 +113,11 @@ const App = () => {
                 <Stack.Screen
                   name="테스트 화면"
                   component={TestMain}
+                  options={{ headerShown: false }}
+                />
+                <Stack.Screen
+                  name="상세 정보"
+                  component={BrandDetail}
                   options={{ headerShown: false }}
                 />
               </>
