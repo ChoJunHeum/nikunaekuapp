@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useReducer } from 'react';
+import React, { useEffect, useMemo, useReducer, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -154,7 +154,7 @@ const App = () => {
                 <Stack.Screen
                   name="상세 정보"
                   component={BrandDetail}
-                  options={{ headerShown: false }}
+                  // options={{ headerShown: false }}
                 />
               </>
             )}
